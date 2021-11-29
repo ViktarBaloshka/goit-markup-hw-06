@@ -234,7 +234,9 @@ body {
 }
 
 .order-service:hover,
-.order-service:focus {
+.order-service:focus,
+.button-submit:hover,
+.button-submit:focus {
   background: var(--order-service-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -738,8 +740,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  min-width: 528px;
+  min-height: 581px;
 
   background: var(--basic-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -760,4 +762,46 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--basic-color);
+}
+
+.modal-group {
+  margin: 0;
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-fonts-color);
+}
+
+.modal-form {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.button-submit {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 712px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--basic-color);
+  cursor: pointer;
+
+  background: var(--active-element-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
