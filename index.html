@@ -377,7 +377,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
-                <svg class="close-icon" width="18" height="18">
+                <svg class="close-icon">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
@@ -385,24 +385,39 @@
                 <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
 
                 <label class="form-field">
-                    <span>Телефон</span>
-                    <input type="tel" name="tel" />
+                    <span class="form-name">Имя</span>
+                    <input class="form-input" type="tel" name="name" placeholder=" " />
+                    <svg class="form-svg">
+                        <use href="./images/icons.svg#person-black"></use>
+                    </svg>
+                </label>
+                <label class="form-field">
+                    <span class="form-name">Телефон</span>
+                    <input class="form-input" type="tel" name="tel" />
+                    <svg class="form-svg">
+                        <use href="./images/icons.svg#phone-black"></use>
+                    </svg>
                 </label>
 
-                <label class=" form-field">
-                    <span>Почта</span>
-                    <input type="email" name="email">
+                <label class="form-field">
+                    <span class="form-name">Почта</span>
+                    <input class="form-input" type="email" name="email">
+                    <svg class="form-svg">
+                        <use href="./images/icons.svg#email-black"></use>
+                    </svg>
                 </label>
-
                 <label class="form-field form-feedback">
-                    <span>Комментарий</span>
-                    <textarea name="feedback" placeholder="Введите текст"></textarea>
+                    <span class="form-name">Комментарий</span>
+                    <textarea class="form-input" name="feedback" placeholder="Введите текст"></textarea>
                 </label>
 
                 <label class="form-checkbox">
-                    <input type="checkbox" name="agree" value="agree" />
-                    <span>Соглашаюсь с рассылкой и принимаю
-                        <a href="">Условия договора</a>
+                    <input class="checkbox visually-hidden" type="checkbox" name="assent" value="assent" />
+                    <svg class="icon-checkbox">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <span class="form-name">Соглашаюсь с рассылкой и принимаю
+                        <a class="form-link link" href="">Условия договора</a>
                     </span>
                 </label>
 
