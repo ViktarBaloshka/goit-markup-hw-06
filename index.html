@@ -381,47 +381,32 @@
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
-            <form class="modal-form" autocomplete="on" novalidate>
+            <form class="form-modal" autocomplete="on" novalidate>
+                <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
 
-                <div class="modal-group">
-                    <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-                    <ul class="form-list list">
-                        <li class="form-item">
-                            <label>
-                                <span>Имя</span>
-                                <input type="text" name="username">
-                            </label>
-                        </li>
-                        <li class="form-item">
-                            <label>
-                                <span>Телефон</span>
-                                <input type="tel" name="tel">
-                            </label>
-                        </li>
-                        <li class="form-item">
-                            <label>
-                                <span>Почта</span>
-                                <input type="email" name="email">
-                            </label>
-                        </li>
-                        <li class="form-item">
-                            <label>
-                                <span>Комментарий</span>
-                                <textarea name="feedback" placeholder="Введите текст"></textarea>
-                            </label>
-                        </li>
-                        <li class="form-item">
-                            <label>
-                                <input type="checkbox" name="agree" value="agree" />
-                                <span>Соглашаюсь с рассылкой и принимаю
-                                    <a href="">Условия договора</a>
-                                </span>
-                            </label>
-                        </li>
-                    </ul>
-                    <button class="button-submit" type="submit">Отправить</button>
-                </div>
+                <label class="form-field">
+                    <span>Телефон</span>
+                    <input type="tel" name="tel" />
+                </label>
 
+                <label class=" form-field">
+                    <span>Почта</span>
+                    <input type="email" name="email">
+                </label>
+
+                <label class="form-field form-feedback">
+                    <span>Комментарий</span>
+                    <textarea name="feedback" placeholder="Введите текст"></textarea>
+                </label>
+
+                <label class="form-checkbox">
+                    <input type="checkbox" name="agree" value="agree" />
+                    <span>Соглашаюсь с рассылкой и принимаю
+                        <a href="">Условия договора</a>
+                    </span>
+                </label>
+
+                <button class="button-submit" type="submit">Отправить</button>
             </form>
         </div>
     </div>

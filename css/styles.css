@@ -764,16 +764,9 @@ body {
   background-color: var(--basic-color);
 }
 
-.modal-group {
-  margin: 0;
-  padding: 40px;
+.form-text {
+  margin: 0 0 12px;
 
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.modal-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -782,17 +775,39 @@ body {
   color: var(--first-fonts-color);
 }
 
-.modal-form {
-  position: absolute;
-  left: 0px;
-  top: 0px;
+.form-modal {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 448px;
+  padding: 40px;
+  outline: 1px solid tomato;
+}
+
+.form-field {
+  outline: 1px solid blue;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-modal .form-feedback {
+  margin: 0;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-text-color);
 }
 
 .button-submit {
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 712px;
 
   font-weight: 700;
   font-size: 16px;
