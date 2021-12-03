@@ -830,6 +830,23 @@ body {
   fill: var(--active-element-color);
 }
 
+.form-decorate,
+.form-svg-decorate {
+  position: relative;
+}
+
+.form-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transform: translate(50%, 50%);
+
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
 .form-feedback .form-input {
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -898,23 +915,6 @@ body {
   text-decoration-skip-ink: none;
 
   color: var(--active-element-color);
-}
-
-.form-decorate,
-.form-svg-decorate {
-  position: relative;
-}
-
-.form-svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-
-  transform: translate(50%, 50%);
-
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
 }
 
 .button-submit {
