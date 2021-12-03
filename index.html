@@ -384,31 +384,42 @@
             <form class="form-modal" autocomplete="on" novalidate>
                 <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
 
-                <label class="form-field">
+                <div class="form-decorate">
+                    <label class="form-field">
+                        <span class="form-name">Имя</span>
+                        <div class="form-svg-decorate">
+                            <input class="form-input" type="name" name="name" />
+                            <svg class="form-svg">
+                                <use href="./images/icons.svg#person-black"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
 
-                    <span class="form-name">Имя</span>
-                    <input class="form-input" type="tel" name="name" placeholder=" " />
-                    <svg class="form-svg">
-                        <use href="./images/icons.svg#person-black"></use>
-                    </svg>
+                <div class="form-decorate">
+                    <label class="form-field">
+                        <span class="form-name">Телефон</span>
+                        <div class="form-svg-decorate">
+                            <input class="form-input" type="tel" name="tel" />
+                            <svg class="form-svg">
+                                <use href="./images/icons.svg#phone-black"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
 
-                </label>
+                <div class="form-decorate">
+                    <label class="form-field">
+                        <span class="form-name">Почта</span>
+                        <div class="form-svg-decorate">
+                            <input class="form-input" type="email" name="email">
+                            <svg class="form-svg">
+                                <use href="./images/icons.svg#email-black"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
 
-                <label class="form-field">
-                    <span class="form-name">Телефон</span>
-                    <input class="form-input" type="tel" name="tel" />
-                    <svg class="form-svg">
-                        <use href="./images/icons.svg#phone-black"></use>
-                    </svg>
-                </label>
-
-                <label class="form-field">
-                    <span class="form-name">Почта</span>
-                    <input class="form-input" type="email" name="email">
-                    <svg class="form-svg">
-                        <use href="./images/icons.svg#email-black"></use>
-                    </svg>
-                </label>
                 <label class="form-field form-feedback">
                     <span class="form-name">Комментарий</span>
                     <textarea class="form-input" name="feedback" placeholder="Введите текст"></textarea>

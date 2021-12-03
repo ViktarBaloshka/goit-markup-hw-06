@@ -797,33 +797,35 @@ body {
 }
 
 .form-field {
-  position: relative;
-  display: block;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 }
 
 .form-input {
-  display: block;
+  display: flex;
   margin-bottom: 10px;
   padding-left: 42px;
   width: 100%;
   height: 40px;
+
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 
   color: var(--first-fonts-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   transition: border var(--time) var(--time-transition),
-    color var(--time) var(--time-transition);
+    color var(--time) var(--time-transition),
+    fill var(--time) var(--time-transition);
 }
 
-.form-input:hover,
 .form-input:focus {
   border: 1px solid var(--active-element-color);
   outline: -webkit-focus-ring-color auto 0px;
 }
 
-.form-input:hover + .form-svg,
 .form-input:focus + .form-svg {
   fill: var(--active-element-color);
 }
@@ -832,18 +834,17 @@ body {
   padding: 12px 16px;
   margin-bottom: 20px;
   height: 120px;
-
   resize: none;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  color: var(--first-fonts-color);
+}
 
+.form-feedback .form-input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form-name {
-  display: block;
+  display: flex;
   margin: 0;
 
   font-weight: 400;
@@ -872,6 +873,14 @@ body {
   background-origin: border-box;
 }
 
+.icon-checkbox {
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid var(--first-fonts-color);
+}
+
 .form-checkbox .form-name {
   margin-left: 8px;
   font-weight: 400;
@@ -891,21 +900,21 @@ body {
   color: var(--active-element-color);
 }
 
+.form-decorate,
+.form-svg-decorate {
+  position: relative;
+}
+
 .form-svg {
   position: absolute;
-  bottom: 12px;
-  left: 20px;
+  left: 0;
+  top: 0;
+
+  transform: translate(50%, 50%);
 
   width: 18px;
   height: 18px;
-}
-
-.icon-checkbox {
-  align-items: center;
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  border: 2px solid black;
+  fill: currentColor;
 }
 
 .button-submit {
