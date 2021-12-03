@@ -371,6 +371,21 @@
                     </li>
                 </ul>
             </div>
+
+            <form class="form-subscribe" autocomplete="off" novalidate>
+                <p class="form-subscribe-text">Подпишитесь на рассылку</p>
+                <div class="form-subscribe-decoration">
+                    <label>
+                        <input class="input-subscribe" type="email" name="email" placeholder="E-mail" />
+                    </label>
+                    <button class="button-subscribe" type="submit">Подписаться
+                        <svg class="telegram-icon">
+                            <use href="./images/icons.svg#telegram"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
         </div>
     </footer>
 
@@ -383,7 +398,6 @@
             </button>
             <form class="form-modal" autocomplete="on" novalidate>
                 <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
-
                 <div class="form-decorate">
                     <label class="form-field">
                         <span class="form-name">Имя</span>
@@ -395,7 +409,6 @@
                         </div>
                     </label>
                 </div>
-
                 <div class="form-decorate">
                     <label class="form-field">
                         <span class="form-name">Телефон</span>
@@ -407,7 +420,6 @@
                         </div>
                     </label>
                 </div>
-
                 <div class="form-decorate">
                     <label class="form-field">
                         <span class="form-name">Почта</span>
@@ -419,12 +431,10 @@
                         </div>
                     </label>
                 </div>
-
                 <label class="form-field form-feedback">
                     <span class="form-name">Комментарий</span>
                     <textarea class="form-input" name="feedback" placeholder="Введите текст"></textarea>
                 </label>
-
                 <label class="form-checkbox">
                     <input class="checkbox visually-hidden" type="checkbox" name="assent" value="assent" />
                     <svg class="icon-checkbox">
@@ -434,7 +444,6 @@
                         <a class="form-link link" href="">Условия договора</a>
                     </span>
                 </label>
-
                 <button class="button-submit" type="submit">Отправить</button>
             </form>
         </div>

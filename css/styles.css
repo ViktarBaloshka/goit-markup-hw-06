@@ -236,7 +236,9 @@ body {
 .order-service:hover,
 .order-service:focus,
 .button-submit:hover,
-.button-submit:focus {
+.button-submit:focus,
+.button-subscribe:hover,
+.button-subscribe:focus {
   background: var(--order-service-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -527,7 +529,8 @@ body {
   margin-bottom: 9px;
 }
 
-.footer-soc-text {
+.footer-soc-text,
+.form-subscribe-text {
   display: flex;
   margin: 0 0 20px;
 
@@ -556,6 +559,17 @@ body {
 .footer .contacts-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
+}
+
+.telegram-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--basic-color);
+}
+
+.form-subscribe-decoration {
+  display: flex;
+  justify-content: center;
 }
 
 /********************************Portfolio page*********************************/
@@ -881,6 +895,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .checkbox:checked + .icon-checkbox {
@@ -890,12 +905,25 @@ body {
   background-origin: border-box;
 }
 
+.checkbox:focus:not(:checked) + .icon-checkbox {
+  border-color: var(--inactive-element-color);
+}
+
+.checkbox:hover + .icon-checkbox,
+.checkbox:focus + .icon-checkbox {
+  border-color: var(--active-element-color);
+}
+
 .icon-checkbox {
   align-items: center;
   width: 16px;
   height: 15px;
   border-radius: 2px;
   border: 2px solid var(--first-fonts-color);
+
+  transition: background-color var(--time) var(--time-transition),
+    color var(--time) var(--time-transition),
+    background-color var(--time) var(--time-transition);
 }
 
 .form-checkbox .form-name {
@@ -917,7 +945,8 @@ body {
   color: var(--active-element-color);
 }
 
-.button-submit {
+.button-submit,
+.button-subscribe {
   display: block;
   width: 200px;
   height: 50px;
