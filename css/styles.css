@@ -767,7 +767,7 @@ body {
 
 .modal-close:hover,
 .modal-close:focus {
-  border: 1px solid var(--active-element-color);
+  color: var(--active-element-color);
 }
 
 .close-icon {
@@ -799,10 +799,11 @@ body {
 .form-field {
   position: relative;
   display: block;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .form-input {
+  display: block;
   margin-bottom: 10px;
   padding-left: 42px;
   width: 100%;
@@ -819,6 +820,7 @@ body {
 .form-input:hover,
 .form-input:focus {
   border: 1px solid var(--active-element-color);
+  outline: -webkit-focus-ring-color auto 0px;
 }
 
 .form-input:hover + .form-svg,
@@ -884,17 +886,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
+  text-decoration-skip-ink: none;
 
   color: var(--active-element-color);
 }
 
 .form-svg {
   position: absolute;
-  bottom: 20px;
-  left: 19px;
+  bottom: 12px;
+  left: 20px;
 
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 .icon-checkbox {
