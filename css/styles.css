@@ -62,8 +62,8 @@ body {
 
 .nav-link:hover,
 .nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus,
+.nav .contacts-link:hover,
+.nav .contacts-link:focus,
 .clients-link:hover,
 .clients-link:focus,
 .footer .contacts-link:hover,
