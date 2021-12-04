@@ -15,6 +15,7 @@ second fonts color: #757575;
   --active-element-color: #2196f3;
   --order-service-color: #188ce8;
   --soc-inactive: #afb1b8;
+  --shadow: rgba(0, 0, 0, 0.15);
   --time-transition: cubic-bezier(0.4, 0, 0.2, 1);
   --time: 250ms;
 }
@@ -240,7 +241,7 @@ body {
 .button-subscribe:hover,
 .button-subscribe:focus {
   background: var(--order-service-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--shadow);
   border-radius: 4px;
 }
 
@@ -884,10 +885,10 @@ body {
 
 .form-svg {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 12px;
+  top: 40%;
 
-  transform: translate(50%, 50%);
+  transform: translateY(-40%);
 
   width: 18px;
   height: 18px;
@@ -942,7 +943,6 @@ body {
   border-color: var(--inactive-element-color);
 }
 
-.checkbox:hover + .icon-checkbox,
 .checkbox:focus + .icon-checkbox {
   border-color: var(--active-element-color);
 }
@@ -995,7 +995,7 @@ body {
   cursor: pointer;
 
   background: var(--active-element-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--shadow);
   border-radius: 4px;
   border: none;
 
