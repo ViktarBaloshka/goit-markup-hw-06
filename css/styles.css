@@ -529,6 +529,10 @@ body {
   margin-bottom: 9px;
 }
 
+.footer-soc {
+  margin-right: 93px;
+}
+
 .footer-soc-text,
 .form-subscribe-text {
   display: flex;
@@ -561,15 +565,44 @@ body {
   font-weight: 400;
 }
 
+.form-subscribe {
+  display: flex;
+}
+
+.label-subscribe {
+  display: flex;
+  align-items: center;
+}
+
 .telegram-icon {
   width: 24px;
   height: 24px;
   fill: var(--basic-color);
 }
 
-.form-subscribe-decoration {
-  display: flex;
-  justify-content: center;
+.form-subscribe .button-subscribe {
+  justify-content: space-between;
+  padding: 10px 32px;
+}
+
+.input-subscribe {
+  display: block;
+  width: 358px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline-style: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.input-subscribe::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /********************************Portfolio page*********************************/
@@ -947,7 +980,9 @@ body {
 
 .button-submit,
 .button-subscribe {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   margin-left: auto;
