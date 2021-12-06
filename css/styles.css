@@ -635,7 +635,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
+  width: 528px;
+  height: 581px;
   padding: 40px;
 
   background: var(--basic-color);
@@ -696,11 +697,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .form-input {
   display: flex;
-  margin-bottom: 10px;
   padding-left: 42px;
   width: 100%;
   height: 40px;
@@ -727,10 +728,7 @@ body {
 
 .form-svg {
   position: absolute;
-  left: 12px;
-  top: 55%;
-
-  transform: translateY(-55%);
+  transform: translate(12px, 28px);
 
   width: 18px;
   height: 18px;
@@ -753,7 +751,7 @@ body {
 .form-name {
   display: flex;
   margin: 0;
-
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -797,12 +795,14 @@ body {
     background-color var(--time) var(--time-transition);
 }
 
-.form-checkbox .form-name {
+.form-checkbox-name {
   margin-left: 8px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--second-fonts-color);
 }
 
 .form-link {
